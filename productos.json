@@ -1,0 +1,82 @@
+[
+  {
+    "id": "aros-gota-cristal",
+    "nombre": "Aros gota de cristal",
+    "categoria": "aros",
+    "material": "Acero quirúrgico dorado",
+    "precio": 14500,
+    "imagen": "https://eltiogoldmayorista.store/assets/tourbillon-fina-Bggr46ba.jpg",
+    "descripcion": "Colgantes livianos, con una gota facetada que toma la luz al moverse. No se oscurecen con el agua ni el perfume.",
+    "destacado": false
+  },
+  {
+    "id": "argollas-lisas",
+    "nombre": "Argollas lisas 20 mm",
+    "categoria": "aros",
+    "material": "Plata 925",
+    "precio": 18900,
+    "imagen": "https://eltiogoldmayorista.store/assets/caracol-fina-DgTBwyxi.jpg",
+    "descripcion": "El par que sirve para todos los días. Cierre a presión, suficientemente livianas para dormir con ellas puestas.",
+    "destacado": false
+  },
+  {
+    "id": "aros-perla-barroca",
+    "nombre": "Aros perla barroca",
+    "categoria": "aros",
+    "material": "Perla de río y acero dorado",
+    "precio": 16200,
+    "imagen": "https://eltiogoldmayorista.store/assets/singapur-ONhP1nKh.jpg",
+    "descripcion": "Cada perla tiene una forma distinta, así que no hay dos pares iguales.",
+    "destacado": false
+  },
+  {
+    "id": "collar-cadena-veneciana",
+    "nombre": "Collar cadena veneciana",
+    "categoria": "collares",
+    "material": "Plata 925",
+    "precio": 27400,
+    "imagen": "https://eltiogoldmayorista.store/assets/gourmet-BP4xdx7S.jpg",
+    "descripcion": "Eslabón cuadrado de 45 cm. Se lleva sola o en capas con una cadena más corta.",
+    "destacado": true
+  },
+  {
+    "id": "collar-medallita",
+    "nombre": "Collar con medallita",
+    "categoria": "collares",
+    "material": "Acero quirúrgico dorado",
+    "precio": 15800,
+    "imagen": "https://eltiogoldmayorista.store/assets/trenzada-fina-DqV0Z1LY.jpg",
+    "descripcion": "Medalla lisa de 12 mm sobre cadena fina. Se puede grabar una inicial a pedido.",
+    "destacado": false
+  },
+  {
+    "id": "choker-eslabon",
+    "nombre": "Choker eslabón grueso",
+    "categoria": "collares",
+    "material": "Acero quirúrgico dorado",
+    "precio": 21000,
+    "imagen": "https://eltiogoldmayorista.store/__l5e/assets-v1/eca34abb-92e1-4d25-be4e-3bc8d3d7cdb9/forcet-fina.png",
+    "descripcion": "Corto y con presencia. Queda bien con escote redondo y con camisa abierta.",
+    "destacado": false
+  },
+  {
+    "id": "anillo-sello",
+    "nombre": "Anillo sello",
+    "categoria": "anillos",
+    "material": "Plata 925",
+    "precio": 19600,
+    "imagen": "https://eltiogoldmayorista.store/assets/enrollada-UErvFN63.jpg",
+    "descripcion": "Frente plano y ancho. Disponible en talles 14 a 20.",
+    "destacado": false
+  },
+    {
+    "id": "anillo-sello",
+    "nombre": "Anillo sello",
+    "categoria": "anillos",
+    "material": "Plata 925",
+    "precio": 19600,
+    "imagen": "https://eltiogoldmayorista.store/assets/tourbillon-fina-Bggr46ba.jpg",
+    "descripcion": "Frente plano y ancho. Disponible en talles 14 a 20.",
+    "destacado": false
+  }
+]

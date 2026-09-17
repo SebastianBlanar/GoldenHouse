@@ -1,11 +1,114 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>Mi joyería</title>
+<html lang="es-AR"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Golden House · Joyería</title>
+  <meta name="description" content="Joyería en plata 925 y acero quirúrgico. Piezas seleccionadas, envíos a todo el país.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&amp;family=Jost:wght@300;400;500&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Prueba github pages</h1>
-    <p>lore ipsum dolor sit amet</p>
-</body>
-</html>
+
+  <a class="saltar" href="#catalogo">Ir al catálogo</a>
+
+  <header class="barra">
+    <a class="marca" href="#inicio">Golden House</a>
+    <nav class="barra__nav">
+      <a href="#catalogo">Catálogo</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main id="inicio">
+
+    <section class="portada">
+      <div class="portada__texto">
+        <p class="portada__intro">Plata 925 y acero quirúrgico</p>
+        <h1 class="portada__titulo">Piezas que<br>duran puestas</h1>
+        <p class="portada__bajada">
+          Elegimos poco y lo elegimos bien. Cada tanda es corta, así que
+          cuando algo se agota puede no volver.
+        </p>
+        <a class="boton" href="#catalogo">Ver el catálogo</a>
+      </div>
+
+      <figure class="portada__pieza">
+        <div class="portada__halo"></div>
+        <img id="imagen-portada" alt="">
+        <figcaption id="pie-portada"></figcaption>
+      </figure>
+    </section>
+
+    <section class="catalogo" id="catalogo">
+      <div class="catalogo__encabezado">
+        <h2>Catálogo</h2>
+        <div class="filtros" role="group" aria-label="Filtrar por categoría">
+          <button class="filtro filtro--activo" data-categoria="todas" aria-pressed="true">Todas</button>
+          <button class="filtro" data-categoria="aros" aria-pressed="false">Aros</button>
+          <button class="filtro" data-categoria="collares" aria-pressed="false">Collares</button>
+          <button class="filtro" data-categoria="anillos" aria-pressed="false">Anillos</button>
+          <button class="filtro" data-categoria="pulseras" aria-pressed="false">Pulseras</button>
+        </div>
+      </div>
+
+      <div class="grilla" id="grilla" aria-live="polite"></div>
+      <p class="estado" id="estado">Cargando el catálogo…</p>
+    </section>
+
+    <section class="nosotros" id="nosotros">
+      <h2>Cómo trabajamos</h2>
+      <div class="nosotros__bloques">
+        <div>
+          <h3>Comprás por mensaje</h3>
+          <p>Elegís la pieza acá y nos escribís por WhatsApp o Instagram. Te confirmamos stock y coordinamos el pago.</p>
+        </div>
+        <div>
+          <h3>Entregas y envíos</h3>
+          <p>Entrega en mano en zona sur del Gran Buenos Aires, o envío por correo a todo el país con seguimiento.</p>
+        </div>
+        <div>
+          <h3>Si algo falla</h3>
+          <p>Tenés treinta días para cambiar una pieza con falla de fábrica. Escribinos y lo resolvemos.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="pie" id="contacto">
+    <div class="pie__marca">
+      <p class="marca">Golden House</p>
+      <p class="pie__nota">Joyería en plata y acero · Buenos Aires</p>
+    </div>
+    <div class="pie__links">
+      <a href="https://wa.me/5491100000000" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a>
+      <a href="mailto:hola@ejemplo.com">Escribinos por mail</a>
+    </div>
+  </footer>
+
+  <!-- Ficha de producto -->
+  <div class="ficha" id="ficha" hidden="">
+    <div class="ficha__fondo" data-cerrar=""></div>
+    <div class="ficha__caja" role="dialog" aria-modal="true" aria-labelledby="ficha-nombre">
+      <button class="ficha__cerrar" data-cerrar="" aria-label="Cerrar la ficha">×</button>
+      <div class="ficha__imagen"><img id="ficha-img" alt=""></div>
+      <div class="ficha__datos">
+        <p class="ficha__categoria" id="ficha-categoria"></p>
+        <h3 id="ficha-nombre"></h3>
+        <p class="ficha__precio" id="ficha-precio"></p>
+        <p class="ficha__material" id="ficha-material"></p>
+        <p class="ficha__descripcion" id="ficha-descripcion"></p>
+        <a class="boton" id="ficha-consulta" href="#" target="_blank" rel="noopener">Consultar por WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+
+
+</body></html>

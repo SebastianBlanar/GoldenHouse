@@ -1,0 +1,453 @@
+/* ============================================
+   Aurea — hoja de estilos
+   Paleta: negro cálido de estuche + oro viejo
+   ============================================ */
+
+:root {
+  --tinta:        #14100d;  /* fondo, negro con temperatura cálida */
+  --terciopelo:   #1e1814;  /* superficies elevadas */
+  --oro:          #c2984f;  /* oro viejo, estructural */
+  --oro-claro:    #e8cd97;  /* champagne, brillos y foco */
+  --hueso:        #f2ece3;  /* texto principal */
+  --humo:         #a1938a;  /* texto secundario */
+  --linea:        #33291f;  /* hairlines */
+
+  --ancho: 1200px;
+  --borde-suave: 2px;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+}
+
+body {
+  margin: 0;
+  background: var(--tinta);
+  color: var(--hueso);
+  font-family: "Jost", "Segoe UI", system-ui, sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, .marca {
+  font-family: "Marcellus", Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  line-height: 1.15;
+  margin: 0;
+}
+
+img { max-width: 100%; display: block; }
+
+a { color: inherit; }
+
+:focus-visible {
+  outline: 2px solid var(--oro-claro);
+  outline-offset: 3px;
+}
+
+.saltar {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background: var(--oro);
+  color: var(--tinta);
+  padding: .75rem 1.25rem;
+  z-index: 100;
+}
+.saltar:focus { left: 0; }
+
+/* ---------- Barra superior ---------- */
+
+.barra {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 1.1rem 2rem;
+  background: rgba(20, 16, 13, .88);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--linea);
+}
+
+.marca {
+  font-size: 1.5rem;
+  letter-spacing: .28em;
+  text-decoration: none;
+  color: var(--hueso);
+  margin: 0;
+}
+
+.barra__nav {
+  display: flex;
+  gap: 2rem;
+  font-size: .95rem;
+  letter-spacing: .05em;
+}
+
+.barra__nav a {
+  text-decoration: none;
+  color: var(--humo);
+  padding-bottom: 2px;
+  border-bottom: 1px solid transparent;
+  transition: color .25s ease, border-color .25s ease;
+}
+
+.barra__nav a:hover { color: var(--hueso); border-bottom-color: var(--oro); }
+
+/* ---------- Portada ---------- */
+
+.portada {
+  max-width: var(--ancho);
+  margin: 0 auto;
+  padding: 5rem 2rem 6rem;
+  display: grid;
+  grid-template-columns: 1fr .85fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.portada__intro {
+  color: var(--oro);
+  letter-spacing: .14em;
+  font-size: .85rem;
+  margin: 0 0 1.5rem;
+}
+
+.portada__titulo {
+  font-size: clamp(2.8rem, 6vw, 4.4rem);
+  letter-spacing: .01em;
+}
+
+.portada__bajada {
+  color: var(--humo);
+  max-width: 42ch;
+  margin: 1.75rem 0 2.5rem;
+}
+
+.portada__pieza {
+  position: relative;
+  margin: 0;
+  aspect-ratio: 4 / 5;
+}
+
+.portada__halo {
+  position: absolute;
+  inset: -12%;
+  background: radial-gradient(ellipse at 50% 42%,
+              rgba(232, 205, 151, .22) 0%,
+              rgba(194, 152, 79, .10) 38%,
+              transparent 68%);
+  pointer-events: none;
+}
+
+.portada__pieza img,
+.portada__pieza .sin-foto {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.portada figcaption {
+  position: absolute;
+  bottom: 1.25rem;
+  left: 1.25rem;
+  right: 1.25rem;
+  color: var(--hueso);
+  font-size: .9rem;
+  letter-spacing: .04em;
+  text-shadow: 0 1px 6px rgba(0,0,0,.7);
+}
+
+/* ---------- Botón ---------- */
+
+.boton {
+  display: inline-block;
+  padding: .85rem 2.2rem;
+  border: 1px solid var(--oro);
+  color: var(--oro-claro);
+  background: transparent;
+  text-decoration: none;
+  font-size: .95rem;
+  letter-spacing: .1em;
+  cursor: pointer;
+  transition: background-color .3s ease, color .3s ease;
+}
+
+.boton:hover { background: var(--oro); color: var(--tinta); }
+
+/* ---------- Catálogo ---------- */
+
+.catalogo {
+  max-width: var(--ancho);
+  margin: 0 auto;
+  padding: 3rem 2rem 6rem;
+  border-top: 1px solid var(--linea);
+}
+
+.catalogo__encabezado {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.catalogo h2, .nosotros h2 {
+  font-size: clamp(1.9rem, 3.5vw, 2.6rem);
+  letter-spacing: .02em;
+}
+
+.filtros { display: flex; flex-wrap: wrap; gap: .5rem; }
+
+.filtro {
+  font-family: inherit;
+  font-size: .9rem;
+  letter-spacing: .06em;
+  color: var(--humo);
+  background: transparent;
+  border: 1px solid var(--linea);
+  padding: .45rem 1.1rem;
+  cursor: pointer;
+  transition: color .25s ease, border-color .25s ease;
+}
+
+.filtro:hover { color: var(--hueso); border-color: var(--oro); }
+
+.filtro--activo {
+  color: var(--tinta);
+  background: var(--oro-claro);
+  border-color: var(--oro-claro);
+}
+
+.grilla {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 2.5rem 1.75rem;
+}
+
+.pieza {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.pieza__foto {
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background: var(--terciopelo);
+  margin-bottom: 1rem;
+}
+
+.pieza__foto img,
+.pieza__foto .sin-foto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .5s ease;
+}
+
+.pieza:hover .pieza__foto img,
+.pieza:hover .pieza__foto .sin-foto { transform: scale(1.04); }
+
+.pieza__nombre { font-size: 1.1rem; margin: 0 0 .3rem; }
+
+.pieza__material {
+  color: var(--humo);
+  font-size: .85rem;
+  margin: 0 0 .6rem;
+}
+
+.pieza__precio {
+  color: var(--oro-claro);
+  font-size: 1rem;
+  letter-spacing: .04em;
+  margin: 0;
+}
+
+.estado {
+  color: var(--humo);
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.estado[hidden] { display: none; }
+
+/* Marcador cuando todavía no hay foto cargada */
+
+.sin-foto {
+  display: grid;
+  place-items: center;
+  background:
+    radial-gradient(ellipse at 50% 38%, rgba(232, 205, 151, .16), transparent 62%),
+    var(--terciopelo);
+  color: var(--oro);
+  font-family: "Marcellus", serif;
+  font-size: 1.6rem;
+  letter-spacing: .3em;
+  text-indent: .3em;
+}
+
+/* ---------- Nosotros ---------- */
+
+.nosotros {
+  max-width: var(--ancho);
+  margin: 0 auto;
+  padding: 4rem 2rem 6rem;
+  border-top: 1px solid var(--linea);
+}
+
+.nosotros__bloques {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+.nosotros h3 {
+  font-size: 1.25rem;
+  color: var(--oro-claro);
+  margin-bottom: .75rem;
+}
+
+.nosotros p { color: var(--humo); margin: 0; max-width: 40ch; }
+
+/* ---------- Pie ---------- */
+
+.pie {
+  border-top: 1px solid var(--linea);
+  padding: 3rem 2rem;
+  max-width: var(--ancho);
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.pie__nota { color: var(--humo); font-size: .85rem; margin: .75rem 0 0; }
+
+.pie__links { display: flex; flex-wrap: wrap; gap: 1.75rem; font-size: .95rem; }
+
+.pie__links a {
+  text-decoration: none;
+  color: var(--humo);
+  border-bottom: 1px solid var(--linea);
+  padding-bottom: 3px;
+  transition: color .25s ease, border-color .25s ease;
+}
+
+.pie__links a:hover { color: var(--oro-claro); border-bottom-color: var(--oro); }
+
+/* ---------- Ficha de producto ---------- */
+
+.ficha {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  display: grid;
+  place-items: center;
+  padding: 1.5rem;
+}
+
+.ficha[hidden] { display: none; }
+
+.ficha__fondo {
+  position: absolute;
+  inset: 0;
+  background: rgba(10, 8, 6, .85);
+}
+
+.ficha__caja {
+  position: relative;
+  background: var(--terciopelo);
+  border: 1px solid var(--linea);
+  max-width: 880px;
+  width: 100%;
+  max-height: 88vh;
+  overflow-y: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.ficha__cerrar {
+  position: absolute;
+  top: .5rem;
+  right: .75rem;
+  z-index: 2;
+  background: none;
+  border: none;
+  color: var(--hueso);
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: .25rem .5rem;
+}
+
+.ficha__cerrar:hover { color: var(--oro-claro); }
+
+.ficha__imagen { aspect-ratio: 1 / 1; overflow: hidden; }
+
+.ficha__imagen img,
+.ficha__imagen .sin-foto { width: 100%; height: 100%; object-fit: cover; }
+
+.ficha__datos { padding: 2.5rem; }
+
+.ficha__categoria {
+  color: var(--oro);
+  font-size: .8rem;
+  letter-spacing: .14em;
+  margin: 0 0 .75rem;
+}
+
+.ficha__datos h3 { font-size: 1.9rem; margin-bottom: 1rem; }
+
+.ficha__precio {
+  color: var(--oro-claro);
+  font-size: 1.35rem;
+  margin: 0 0 .25rem;
+}
+
+.ficha__material { color: var(--humo); font-size: .9rem; margin: 0 0 1.5rem; }
+
+.ficha__descripcion { margin: 0 0 2rem; }
+
+/* ---------- Adaptación a pantallas chicas ---------- */
+
+@media (max-width: 860px) {
+  .portada {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    padding: 3rem 1.5rem 4rem;
+  }
+  .portada__pieza { order: -1; aspect-ratio: 3 / 2; }
+  .ficha__caja { grid-template-columns: 1fr; }
+  .ficha__datos { padding: 1.75rem; }
+  .catalogo, .nosotros, .pie { padding-left: 1.5rem; padding-right: 1.5rem; }
+}
+
+@media (max-width: 560px) {
+  .barra { padding: 1rem 1.25rem; }
+  .barra__nav { gap: 1.1rem; font-size: .85rem; }
+  .marca { font-size: 1.2rem; letter-spacing: .2em; }
+  .grilla { grid-template-columns: repeat(2, 1fr); gap: 2rem 1rem; }
+}

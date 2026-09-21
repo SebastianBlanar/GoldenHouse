@@ -85,11 +85,7 @@
       producto.className = "captura__producto";
       producto.textContent = item.producto;
 
-      const canalEtiqueta = document.createElement("span");
-      canalEtiqueta.className = "captura__canal";
-      canalEtiqueta.textContent = NOMBRES_CANAL[item.canal] || item.canal;
-
-      pie.append(producto, canalEtiqueta);
+      pie.append(producto);
       boton.append(marco, pie);
       boton.addEventListener("click", () => abrirVisor(item));
       galeria.appendChild(boton);
@@ -116,7 +112,6 @@
     ponerImagenCaptura(contenedor, item);
 
     document.getElementById("visor-producto").textContent = item.producto;
-    document.getElementById("visor-canal").textContent = NOMBRES_CANAL[item.canal] || item.canal;
 
     visor.hidden = false;
     document.body.style.overflow = "hidden";

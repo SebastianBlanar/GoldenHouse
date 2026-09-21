@@ -8,7 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
   <link href="https://fonts.googleapis.com/css2?family=Marcellus&amp;family=Jost:wght@300;400;500&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/capturas.css">
  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -79,6 +80,19 @@
       </div>
     </section>
 
+     <section class="pruebas" id="ventas">
+      <div class="pruebas__encabezado">
+        <h2>Ventas concretadas</h2>
+      </div>
+      <p class="pruebas__bajada">
+        Conversaciones reales con clientas, con los datos personales tapados.
+        Tocá una captura para verla completa.
+      </p>
+
+      <div class="galeria-capturas" id="galeria-capturas" aria-live="polite"></div>
+      <p class="estado" id="estado-capturas">Cargando las capturas…</p>
+    </section>
+
   </main>
 
   <footer class="pie" id="contacto">
@@ -109,8 +123,21 @@
       </div>
     </div>
   </div>
+        <!-- Visor de capturas de ventas -->
+  <div class="visor-captura" id="visor-captura" hidden="">
+    <div class="visor-captura__fondo" data-cerrar-captura=""></div>
+    <div class="visor-captura__caja" role="dialog" aria-modal="true" aria-label="Captura de conversación ampliada">
+      <button class="visor-captura__cerrar" data-cerrar-captura="" aria-label="Cerrar la captura">×</button>
+      <div class="visor-captura__imagen"></div>
+      <div class="visor-captura__pie">
+        <strong id="visor-producto"></strong>
+        <span id="visor-canal"></span>
+      </div>
+    </div>
+  </div>
 
-  <script src="main.js"></script>
-
+  <script src="js/main.js"></script>
+  <script src="js/capturas.js"></script>
 
 </body></html>
+

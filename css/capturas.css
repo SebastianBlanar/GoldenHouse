@@ -1,0 +1,214 @@
+/* ============================================
+   Aurea — sección "Ventas concretadas"
+   Depende de las variables definidas en estilos.css
+   (--tinta, --terciopelo, --oro, --oro-claro, --hueso, --humo, --linea)
+   Cargar este archivo DESPUÉS de estilos.css
+   ============================================ */
+
+.pruebas {
+  max-width: var(--ancho, 1200px);
+  margin: 0 auto;
+  padding: 4rem 2rem 6rem;
+  border-top: 1px solid var(--linea);
+}
+
+.pruebas__encabezado {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-bottom: .75rem;
+}
+
+.pruebas h2 {
+  font-family: "Marcellus", Georgia, serif;
+  font-size: clamp(1.9rem, 3.5vw, 2.6rem);
+  letter-spacing: .02em;
+  margin: 0;
+}
+
+.pruebas__bajada {
+  color: var(--humo);
+  max-width: 56ch;
+  margin: 0 0 3rem;
+}
+
+.pruebas__filtros {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+}
+
+.pruebas__filtro {
+  font-family: "Jost", sans-serif;
+  font-size: .9rem;
+  letter-spacing: .06em;
+  color: var(--humo);
+  background: transparent;
+  border: 1px solid var(--linea);
+  padding: .45rem 1.1rem;
+  cursor: pointer;
+  transition: color .25s ease, border-color .25s ease;
+}
+
+.pruebas__filtro:hover { color: var(--hueso); border-color: var(--oro); }
+
+.pruebas__filtro--activo {
+  color: var(--tinta);
+  background: var(--oro-claro);
+  border-color: var(--oro-claro);
+}
+
+.galeria-capturas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
+}
+
+.captura {
+  background: var(--terciopelo);
+  border: 1px solid var(--linea);
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: border-color .25s ease;
+}
+
+.captura:hover { border-color: var(--oro); }
+
+.captura__marco {
+  aspect-ratio: 9 / 16;
+  overflow: hidden;
+  background: var(--tinta);
+  display: flex;
+}
+
+/* object-fit: contain, no cover — es una captura con texto, no una foto de producto */
+.captura__marco img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.captura__pie {
+  padding: .85rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .5rem;
+}
+
+.captura__producto {
+  font-size: .85rem;
+  color: var(--hueso);
+}
+
+.captura__canal {
+  font-size: .72rem;
+  letter-spacing: .08em;
+  color: var(--oro);
+  white-space: nowrap;
+}
+
+/* Marcador cuando la captura todavía no fue subida */
+.captura-pendiente {
+  display: grid;
+  place-items: center;
+  gap: .5rem;
+  width: 100%;
+  height: 100%;
+  background:
+    radial-gradient(ellipse at 50% 30%, rgba(232, 205, 151, .14), transparent 62%),
+    var(--terciopelo);
+  color: var(--humo);
+  text-align: center;
+  padding: 1rem;
+}
+
+.captura-pendiente__globo {
+  width: 34px;
+  height: 34px;
+  border: 1px solid var(--oro);
+  border-radius: 50% 50% 50% 4px;
+}
+
+.captura-pendiente__texto {
+  font-size: .75rem;
+  letter-spacing: .05em;
+}
+
+/* ---------- Visor a pantalla completa ---------- */
+
+.visor-captura {
+  position: fixed;
+  inset: 0;
+  z-index: 90;
+  display: grid;
+  place-items: center;
+  padding: 1.5rem;
+}
+
+.visor-captura[hidden] { display: none; }
+
+.visor-captura__fondo {
+  position: absolute;
+  inset: 0;
+  background: rgba(10, 8, 6, .9);
+}
+
+.visor-captura__caja {
+  position: relative;
+  max-width: 480px;
+  width: 100%;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.visor-captura__cerrar {
+  position: absolute;
+  top: -2.5rem;
+  right: 0;
+  background: none;
+  border: none;
+  color: var(--hueso);
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: .25rem .5rem;
+}
+
+.visor-captura__cerrar:hover { color: var(--oro-claro); }
+
+.visor-captura__imagen {
+  background: var(--terciopelo);
+  border: 1px solid var(--linea);
+  max-height: 72vh;
+  overflow: hidden;
+  display: flex;
+}
+
+.visor-captura__imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.visor-captura__pie {
+  padding: 1rem .25rem 0;
+  display: flex;
+  justify-content: space-between;
+  color: var(--humo);
+  font-size: .85rem;
+}
+
+.visor-captura__pie strong { color: var(--hueso); font-weight: 400; }
+
+@media (max-width: 560px) {
+  .galeria-capturas { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+  .pruebas { padding-left: 1.5rem; padding-right: 1.5rem; }
+}

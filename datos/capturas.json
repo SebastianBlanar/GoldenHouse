@@ -1,0 +1,44 @@
+[
+  {
+    "id": "venta-01",
+    "canal": "whatsapp",
+    "producto": "Collar cadena veneciana",
+    "imagen": "img/capturas/captura-1.jpg",
+    "alt": "Conversación de WhatsApp donde una clienta confirma la compra del collar cadena veneciana"
+  },
+  {
+    "id": "venta-02",
+    "canal": "instagram",
+    "producto": "Aros gota de cristal",
+    "imagen": "img/capturas/captura-2.jpg",
+    "alt": "Mensaje directo de Instagram cerrando la compra de los aros gota de cristal"
+  },
+  {
+    "id": "venta-03",
+    "canal": "whatsapp",
+    "producto": "Anillo sello",
+    "imagen": "img/capturas/captura-3.jpg",
+    "alt": "Conversación de WhatsApp coordinando la entrega del anillo sello"
+  },
+  {
+    "id": "venta-04",
+    "canal": "whatsapp",
+    "producto": "Pulsera de dijes",
+    "imagen": "img/capturas/captura-4.jpg",
+    "alt": "Conversación de WhatsApp confirmando el pago de la pulsera de dijes"
+  },
+  {
+    "id": "venta-05",
+    "canal": "instagram",
+    "producto": "Choker eslabón grueso",
+    "imagen": "img/capturas/captura-5.jpg",
+    "alt": "Mensaje directo de Instagram sobre el choker eslabón grueso"
+  },
+  {
+    "id": "venta-06",
+    "canal": "whatsapp",
+    "producto": "Argollas lisas 20 mm",
+    "imagen": "img/capturas/captura-6.jpg",
+    "alt": "Conversación de WhatsApp cerrando la venta de las argollas lisas"
+  }
+]

@@ -24,7 +24,7 @@ const precioARS = new Intl.NumberFormat("es-AR", {
 
 async function cargarProductos() {
   try {
-    const respuesta = await fetch("productos.json");
+    const respuesta = await fetch("datos/productos.json");
     if (!respuesta.ok) throw new Error(`HTTP ${respuesta.status}`);
 
     productos = await respuesta.json();
@@ -46,7 +46,6 @@ async function cargarProductos() {
 function ponerImagen(contenedor, producto) {
   const img = document.createElement("img");
   img.src = producto.imagen;
-  console.log("URL de imagen:", img.src);
   img.alt = producto.nombre;
   img.loading = "lazy";
 

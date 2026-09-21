@@ -46,6 +46,7 @@ async function cargarProductos() {
 function ponerImagen(contenedor, producto) {
   const img = document.createElement("img");
   img.src = producto.imagen;
+  console.log("URL de imagen:", img.src);
   img.alt = producto.nombre;
   img.loading = "lazy";
 

@@ -2,17 +2,17 @@
 {
 "id": "cadena-tourbillon-fina",
 "nombre": "Cadena Tourbillon fina",
-"categoria": "collares",
+"categoria": "cadenas",
 "material": "Acero quirúrgico dorado",
 "precio": 14500,
 "imagen": "https://eltiogoldmayorista.store/assets/tourbillon-fina-Bggr46ba.jpg",
-"descripcion": "Cadena Tourbillon fina de diseño delicado y elegante, ideal para usar sola o combinar con otras collares.",
+"descripcion": "Cadena Tourbillon fina de diseño delicado y elegante, ideal para usar sola o combinar con otras cadenas.",
 "destacado": false
 },
 {
 "id": "cadena-caracol-fina",
 "nombre": "Cadena Caracol fina",
-"categoria": "collares",
+"categoria": "cadenas",
 "material": "Plata 925",
 "precio": 18900,
 "imagen": "https://eltiogoldmayorista.store/assets/caracol-fina-DgTBwyxi.jpg",
@@ -22,7 +22,7 @@
 {
 "id": "cadena-singapur",
 "nombre": "Cadena Singapur",
-"categoria": "collares",
+"categoria": "cadenas",
 "material": "Acero quirúrgico dorado",
 "precio": 16200,
 "imagen": "https://eltiogoldmayorista.store/assets/singapur-ONhP1nKh.jpg",
@@ -32,7 +32,7 @@
 {
 "id": "cadena-gourmet",
 "nombre": "Cadena Gourmet",
-"categoria": "collares",
+"categoria": "cadenas",
 "material": "Plata 925",
 "precio": 27400,
 "imagen": "https://eltiogoldmayorista.store/assets/gourmet-BP4xdx7S.jpg",
@@ -42,17 +42,17 @@
 {
 "id": "cadena-trenzada-fina",
 "nombre": "Cadena Trenzada fina",
-"categoria": "collares",
+"categoria": "cadenas",
 "material": "Acero quirúrgico dorado",
 "precio": 15800,
 "imagen": "https://eltiogoldmayorista.store/assets/trenzada-fina-DqV0Z1LY.jpg",
-"descripcion": "Cadena Trenzada fina de aspecto delicado y elegante, ideal para combinar con otros collares o usar sola.",
+"descripcion": "Cadena Trenzada fina de aspecto delicado y elegante, ideal para combinar con otros cadenas o usar sola.",
 "destacado": false
 },
 {
 "id": "cadena-forcet-fina",
 "nombre": "Cadena Forcet fina",
-"categoria": "collares",
+"categoria": "cadenas",
 "material": "Acero quirúrgico dorado",
 "precio": 21000,
 "imagen": "https://eltiogoldmayorista.store/__l5e/assets-v1/eca34abb-92e1-4d25-be4e-3bc8d3d7cdb9/forcet-fina.png",
@@ -62,7 +62,7 @@
 {
 "id": "cadena-enrollada",
 "nombre": "Cadena Enrollada",
-"categoria": "collares",
+"categoria": "cadenas",
 "material": "Plata 925",
 "precio": 19600,
 "imagen": "https://eltiogoldmayorista.store/assets/enrollada-UErvFN63.jpg",
@@ -72,11 +72,11 @@
 {
 "id": "cadena-tourbillon-fina-2",
 "nombre": "Cadena Tourbillon fina",
-"categoria": "collares",
+"categoria": "cadenas",
 "material": "Plata 925",
 "precio": 19600,
 "imagen": "https://eltiogoldmayorista.store/assets/tourbillon-fina-Bggr46ba.jpg",
-"descripcion": "Cadena Tourbillon fina de diseño delicado y elegante, ideal para usar sola o combinar con otras collares.",
+"descripcion": "Cadena Tourbillon fina de diseño delicado y elegante, ideal para usar sola o combinar con otras cadenas.",
 "destacado": false
 },
 {

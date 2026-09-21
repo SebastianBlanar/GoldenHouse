@@ -1,82 +1,162 @@
 [
-  {
-    "id": "aros-gota-cristal",
-    "nombre": "Aros gota de cristal",
-    "categoria": "aros",
-    "material": "Acero quirúrgico dorado",
-    "precio": 14500,
-    "imagen": "https://eltiogoldmayorista.store/assets/tourbillon-fina-Bggr46ba.jpg",
-    "descripcion": "Colgantes livianos, con una gota facetada que toma la luz al moverse. No se oscurecen con el agua ni el perfume.",
-    "destacado": false
-  },
-  {
-    "id": "argollas-lisas",
-    "nombre": "Argollas lisas 20 mm",
-    "categoria": "aros",
+{
+"id": "cadena-tourbillon-fina",
+"nombre": "Cadena Tourbillon fina",
+"categoria": "collares",
+"material": "Acero quirúrgico dorado",
+"precio": 14500,
+"imagen": "https://eltiogoldmayorista.store/assets/tourbillon-fina-Bggr46ba.jpg",
+"descripcion": "Cadena Tourbillon fina de diseño delicado y elegante, ideal para usar sola o combinar con otras collares.",
+"destacado": false
+},
+{
+"id": "cadena-caracol-fina",
+"nombre": "Cadena Caracol fina",
+"categoria": "collares",
+"material": "Plata 925",
+"precio": 18900,
+"imagen": "https://eltiogoldmayorista.store/assets/caracol-fina-DgTBwyxi.jpg",
+"descripcion": "Cadena Caracol fina, de diseño delicado y versátil. Una opción ideal para usar todos los días.",
+"destacado": false
+},
+{
+"id": "cadena-singapur",
+"nombre": "Cadena Singapur",
+"categoria": "collares",
+"material": "Acero quirúrgico dorado",
+"precio": 16200,
+"imagen": "https://eltiogoldmayorista.store/assets/singapur-ONhP1nKh.jpg",
+"descripcion": "Cadena Singapur de diseño clásico y delicado, perfecta para complementar diferentes estilos y looks.",
+"destacado": false
+},
+{
+"id": "cadena-gourmet",
+"nombre": "Cadena Gourmet",
+"categoria": "collares",
+"material": "Plata 925",
+"precio": 27400,
+"imagen": "https://eltiogoldmayorista.store/assets/gourmet-BP4xdx7S.jpg",
+"descripcion": "Cadena Gourmet de eslabones marcados y diseño llamativo. Ideal para lucir como pieza principal o combinar en capas.",
+"destacado": true
+},
+{
+"id": "cadena-trenzada-fina",
+"nombre": "Cadena Trenzada fina",
+"categoria": "collares",
+"material": "Acero quirúrgico dorado",
+"precio": 15800,
+"imagen": "https://eltiogoldmayorista.store/assets/trenzada-fina-DqV0Z1LY.jpg",
+"descripcion": "Cadena Trenzada fina de aspecto delicado y elegante, ideal para combinar con otros collares o usar sola.",
+"destacado": false
+},
+{
+"id": "cadena-forcet-fina",
+"nombre": "Cadena Forcet fina",
+"categoria": "collares",
+"material": "Acero quirúrgico dorado",
+"precio": 21000,
+"imagen": "https://eltiogoldmayorista.store/__l5e/assets-v1/eca34abb-92e1-4d25-be4e-3bc8d3d7cdb9/forcet-fina.png",
+"descripcion": "Cadena Forcet fina de eslabones definidos y diseño clásico. Una pieza versátil para usar sola o combinar.",
+"destacado": false
+},
+{
+"id": "cadena-enrollada",
+"nombre": "Cadena Enrollada",
+"categoria": "collares",
+"material": "Plata 925",
+"precio": 19600,
+"imagen": "https://eltiogoldmayorista.store/assets/enrollada-UErvFN63.jpg",
+"descripcion": "Cadena Enrollada de diseño original y textura marcada, ideal para aportar un detalle diferente al look.",
+"destacado": false
+},
+{
+"id": "cadena-tourbillon-fina-2",
+"nombre": "Cadena Tourbillon fina",
+"categoria": "collares",
+"material": "Plata 925",
+"precio": 19600,
+"imagen": "https://eltiogoldmayorista.store/assets/tourbillon-fina-Bggr46ba.jpg",
+"descripcion": "Cadena Tourbillon fina de diseño delicado y elegante, ideal para usar sola o combinar con otras collares.",
+"destacado": false
+},
+{
+"id": "rolex-plateado",
+"nombre": "Rolex Plateado",
+"categoria": "relojes",
+"material": "Acero inoxidable",
+"precio": 75000,
+"imagen": "img/rolex-plateado.jpeg",
+"descripcion": "Reloj Rolex Plateado de diseño clásico y atemporal, perfecto para complementar cualquier atuendo con un toque de lujo.",
+"destacado": false
+},
+{
+"id": "rolex-dorado",
+"nombre": "Rolex Dorado",
+"categoria": "relojes",
+"material": "Acero inoxidable",
+"precio": 75000,
+"imagen": "img/rolex-dorado.jpeg",
+"descripcion": "Reloj Rolex Dorado de diseño clásico y atemporal, perfecto para complementar cualquier atuendo con un toque de lujo.",
+"destacado": false
+},
+{
+"id": "rolex-dorado-negro",
+"nombre": "Rolex Dorado Negro",
+"categoria": "relojes",
+"material": "Acero inoxidable",
+"precio": 75000,
+"imagen": "img/rolex-dorado-negro.jpeg",
+"descripcion": "Reloj Rolex Dorado Negro de diseño clásico y atemporal, perfecto para complementar cualquier atuendo con un toque de lujo.",
+"destacado": false
+},
+{
+"id": "rolex-azul",
+"nombre": "Rolex Azul",
+"categoria": "relojes",
+"material": "Acero inoxidable",
+"precio": 75000,
+"imagen": "img/rolex-azul.jpeg",
+"descripcion": "Reloj Rolex Azul de diseño clásico y atemporal, perfecto para complementar cualquier atuendo con un toque de lujo.",
+"destacado": false
+},
+{
+"id": "patek-dorado",
+"nombre": "Patek Dorado",    
+"categoria": "relojes",
+"material": "Plata 925",
+"precio": 60000,
+"imagen": "img/patek-dorado.jpeg",
+"descripcion": "Reloj Patek Dorado de diseño elegante y sofisticado, ideal para ocasiones especiales o para lucir un estilo distinguido.",
+"destacado": false
+},
+{
+"id": "patek-negro",
+"nombre": "Patek Negro",
+"categoria": "relojes",
+"material": "Plata 925",
+"precio": 60000,
+"imagen": "img/patek-negro.jpeg",
+"descripcion": "Reloj Patek Negro de diseño elegante y sofisticado, ideal para ocasiones especiales o para lucir un estilo distinguido.",
+"destacado": false
+},
+{
+    "id": "patek-azul",
+    "nombre": "Patek Azul",
+    "categoria": "relojes",
     "material": "Plata 925",
-    "precio": 18900,
-    "imagen": "https://eltiogoldmayorista.store/assets/caracol-fina-DgTBwyxi.jpg",
-    "descripcion": "El par que sirve para todos los días. Cierre a presión, suficientemente livianas para dormir con ellas puestas.",
+    "precio": 60000,
+    "imagen": "img/patek-azul.jpeg",
+    "descripcion": "Reloj Patek Azul de diseño elegante y sofisticado, ideal para ocasiones especiales o para lucir un estilo distinguido.",
     "destacado": false
-  },
-  {
-    "id": "aros-perla-barroca",
-    "nombre": "Aros perla barroca",
-    "categoria": "aros",
-    "material": "Perla de río y acero dorado",
-    "precio": 16200,
-    "imagen": "https://eltiogoldmayorista.store/assets/singapur-ONhP1nKh.jpg",
-    "descripcion": "Cada perla tiene una forma distinta, así que no hay dos pares iguales.",
-    "destacado": false
-  },
-  {
-    "id": "collar-cadena-veneciana",
-    "nombre": "Collar cadena veneciana",
-    "categoria": "collares",
-    "material": "Plata 925",
-    "precio": 27400,
-    "imagen": "https://eltiogoldmayorista.store/assets/gourmet-BP4xdx7S.jpg",
-    "descripcion": "Eslabón cuadrado de 45 cm. Se lleva sola o en capas con una cadena más corta.",
-    "destacado": true
-  },
-  {
-    "id": "collar-medallita",
-    "nombre": "Collar con medallita",
-    "categoria": "collares",
-    "material": "Acero quirúrgico dorado",
-    "precio": 15800,
-    "imagen": "https://eltiogoldmayorista.store/assets/trenzada-fina-DqV0Z1LY.jpg",
-    "descripcion": "Medalla lisa de 12 mm sobre cadena fina. Se puede grabar una inicial a pedido.",
-    "destacado": false
-  },
-  {
-    "id": "choker-eslabon",
-    "nombre": "Choker eslabón grueso",
-    "categoria": "collares",
-    "material": "Acero quirúrgico dorado",
-    "precio": 21000,
-    "imagen": "https://eltiogoldmayorista.store/__l5e/assets-v1/eca34abb-92e1-4d25-be4e-3bc8d3d7cdb9/forcet-fina.png",
-    "descripcion": "Corto y con presencia. Queda bien con escote redondo y con camisa abierta.",
-    "destacado": false
-  },
-  {
-    "id": "anillo-sello",
-    "nombre": "Anillo sello",
-    "categoria": "anillos",
-    "material": "Plata 925",
-    "precio": 19600,
-    "imagen": "https://eltiogoldmayorista.store/assets/enrollada-UErvFN63.jpg",
-    "descripcion": "Frente plano y ancho. Disponible en talles 14 a 20.",
-    "destacado": false
-  },
-    {
-    "id": "anillo-sello",
-    "nombre": "Anillo sello",
-    "categoria": "anillos",
-    "material": "Plata 925",
-    "precio": 19600,
-    "imagen": "https://eltiogoldmayorista.store/assets/tourbillon-fina-Bggr46ba.jpg",
-    "descripcion": "Frente plano y ancho. Disponible en talles 14 a 20.",
-    "destacado": false
-  }
+},
+{
+"id": "rolex-dorado-plateado",
+"nombre": "Rolex Dorado Plateado",
+"categoria": "relojes",
+"material": "Acero inoxidable",
+"precio": 75000,
+"imagen": "img/rolex-dorado-plateado.jpeg",
+"descripcion": "Reloj Rolex Dorado Plateado de diseño clásico y atemporal, perfecto para complementar cualquier atuendo con un toque de lujo.",
+"destacado": false
+}
 ]

@@ -30,8 +30,7 @@ async function cargarProductos() {
     productos = await respuesta.json();
     estado.hidden = true;
 
-    mostrarPortada();
-    dibujarGrilla("todas");
+    dibujarGrilla("cadenas premium");
   } catch (error) {
     console.error(error);
     estado.hidden = false;
@@ -62,27 +61,37 @@ function ponerImagen(contenedor, producto) {
 }
 
 /* ---------- Portada ---------- */
+/* ---------- Portada ---------- */
+
+// Imagen fija de portada — no depende de productos.json.
+// Cambiala cuando quieras usar otra foto.
+const IMAGEN_PORTADA = "img/portada.jpg";
+
+// Texto de la etiqueta flotante sobre la foto. Dejalo vacío ("") si no
+// querés que aparezca nada — no tiene por qué ser el nombre de un producto.
+const TEXTO_PORTADA = "Golden House";
 
 function mostrarPortada() {
-  const destacado = productos.find(p => p.destacado) || productos[0];
-  if (!destacado) return;
-
   const img = document.getElementById("imagen-portada");
-  img.src = destacado.imagen;
-  img.alt = destacado.nombre;
+  img.src = IMAGEN_PORTADA;
+  img.alt = "";
+
   img.addEventListener("error", () => {
     const marcador = document.createElement("div");
     marcador.className = "sin-foto";
-    marcador.textContent = "Aurea";
+    marcador.textContent = "Golden House";
     marcador.setAttribute("role", "img");
     marcador.setAttribute("aria-label", "Foto de portada pendiente");
     img.replaceWith(marcador);
   });
 
-  document.getElementById("pie-portada").textContent =
-    `${destacado.nombre} — ${precioARS.format(destacado.precio)}`;
+  const pie = document.getElementById("pie-portada");
+  if (TEXTO_PORTADA) {
+    pie.textContent = TEXTO_PORTADA;
+  } else {
+    pie.hidden = true;
+  }
 }
-
 /* ---------- Grilla ---------- */
 
 function dibujarGrilla(categoria) {
@@ -179,5 +188,5 @@ ficha.querySelectorAll("[data-cerrar]").forEach(elemento => {
 document.addEventListener("keydown", evento => {
   if (evento.key === "Escape" && !ficha.hidden) cerrarFicha();
 });
-
+mostrarPortada();
 cargarProductos();

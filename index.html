@@ -3,7 +3,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Golden House · Joyería</title>
-  <meta name="description" content="Joyería en plata 925 y acero quirúrgico. Piezas seleccionadas, envíos a todo el país.">
+  <meta name="description" content="Joyería en Oro enchapado 18k y acero quirúrgico. Piezas seleccionadas, envíos a todo el país.">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
@@ -29,30 +29,39 @@
 
   <main id="inicio">
 
-    <section class="portada">
-      <div class="portada__texto">
-        <p class="portada__intro">Plata 925 y acero quirúrgico</p>
-        <h1 class="portada__titulo">Piezas que<br>duran puestas</h1>
-        <p class="portada__bajada">
-          Elegimos poco y lo elegimos bien. Cada tanda es corta, así que
-          cuando algo se agota puede no volver.
-        </p>
-        <a class="boton" href="#catalogo">Ver el catálogo</a>
-      </div>
+  <!-- Portada 2 (imagen grande) -->
+   <section class="portada">
+  <div class="portada__fondo">
+    <img id="imagen-portada" alt="">
+  </div>
 
-      <figure class="portada__pieza">
-        <div class="portada__halo"></div>
-        <img id="imagen-portada" alt="">
-        <figcaption id="pie-portada"></figcaption>
-      </figure>
-    </section>
+  <div class="portada__tarjeta">
+    <div class="portada__tarjeta-caja">
+      <p class="portada__intro">Piezas limitadas por tanda</p>
+      <h1 class="portada__titulo"><br>Calidad</br> al mejor precio</h1>
+      <p class="portada__bajada">
+        Cadenas, relojes y pulseras bañados en oro 18k, con el peso y la
+        caída de una joya real. Procuramos ofrecer piezas de calidad,
+        con terminación y atención al detalle.
+      </p>
+      <div class="portada__acciones">
+        <a class="boton" href="#catalogo">Ver el catálogo</a>
+        <a class="portada__enlace" href="https://www.instagram.com/goldenn.house_/" target="_blank" rel="noopener">
+          Ver en Instagram <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <p class="portada__pie" id="pie-portada"></p>
+</section>
 
     <section class="catalogo" id="catalogo">
       <div class="catalogo__encabezado">
         <h2>Catálogo</h2>
         <div class="filtros" role="group" aria-label="Filtrar por categoría">
-          <button class="filtro filtro--activo" data-categoria="todas" aria-pressed="true">Todas</button>
           <button class="filtro" data-categoria="cadenas" aria-pressed="false">Cadenas</button>
+          <button class="filtro filtro--activo" data-categoria="cadenas premium" aria-pressed="true">Cadenas Premium</button>
           <button class="filtro" data-categoria="relojes" aria-pressed="false">Relojes</button>
           <button class="filtro" data-categoria="pulseras" aria-pressed="false">Pulseras</button>
         </div>
@@ -63,19 +72,31 @@
     </section>
 
     <section class="nosotros" id="nosotros">
-      <h2>Cómo trabajamos</h2>
+      <h2>Preguntas frecuentes</h2>
       <div class="nosotros__bloques">
         <div>
-          <h3>Comprás por mensaje</h3>
-          <p>Elegís la pieza acá y nos escribís por WhatsApp o Instagram. Te confirmamos stock y coordinamos el pago.</p>
+          <h3>¿Con que tipo de calidad trabajan?</h3>
+          <p>Trabajamos con piezas de acero quirúrgico bañadas en oro de 18K, seleccionadas por su calidad, terminación y atención al detalle. Buscamos ofrecer joyería con una excelente presencia y acabado, ideal para quienes quieren lucir una pieza elegante sin resignar calidad.</p>
         </div>
         <div>
-          <h3>Entregas y envíos</h3>
-          <p>Entrega en mano en zona sur del Gran Buenos Aires, o envío por correo a todo el país con seguimiento.</p>
+          <h3>¿Qué cuidados hay que tener en cuenta?</h3>
+          <p>Nuestras piezas están pensadas para acompañarte en el día a día. Para mantener su brillo y terminación por mas tiempo, simplemente recomendamos cuidados básicos, como evitar el contacto prolongado con el agua, perfumes y productos químicos. Al guardarla, mantenerla en un lugar seco. Con estos simples cuidados, vas a poder disfrutar de tu pieza y mantener su aspecto impecable por mucho tiempo.</p>
         </div>
         <div>
-          <h3>Si algo falla</h3>
-          <p>Tenés treinta días para cambiar una pieza con falla de fábrica. Escribinos y lo resolvemos.</p>
+          <h3>¿Cómo puedo realizar una compra?</h3>
+          <p>Comprar es muy simple, elegí la pieza que más te gusta, comunícate con nosotros por WSP y desde ahí coordinamos disponibilidad y entrega.</p>
+        </div>
+        <div>
+          <h3>¿Realizan envíos? </h3>
+          <p>Sí, realizamos envíos dentro de Buenos Aires. La modalidad de entrega depende de la zona, puede realizarse mediante moto mensajería o mediante puntos de encuentro.</p>
+        </div>
+        <div>
+          <h3>¿Qué medios de pago aceptan?</h3>
+          <p>Aceptamos transferencias y efectivo en los puntos de encuentro.</p>
+        </div>
+        <div>
+          <h3>¿Realizan devoluciones?</h3>
+          <p>Sí, contamos con devoluciones en caso de que el  producto presente fallas dentro de los primeros 5 días que se realizó la compra.</p>
         </div>
       </div>
     </section>

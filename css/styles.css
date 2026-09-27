@@ -233,12 +233,6 @@ a { color: inherit; }
   border: 1px solid rgba(232, 205, 151, .18);
 }
 
-@media (max-width: 860px) {
-  .portada { min-height: min(78vh, 620px); }
-  .portada__tarjeta-caja { max-width: 100%; padding: 2rem; }
-  .portada__pie { left: 1.5rem; right: 1.5rem; text-align: center; }
-}
-
 @media (max-width: 560px) {
   .portada__tarjeta { padding: 0 1.25rem; }
 }
@@ -510,17 +504,40 @@ a { color: inherit; }
 /* ---------- Adaptación a pantallas chicas ---------- */
 
 @media (max-width: 860px) {
+  /* Portada: se apila en vez de superponerse a la foto */
   .portada {
-    grid-template-columns: 1fr;
-    gap: 3rem;
-    padding: 3rem 1.5rem 4rem;
+    display: block;
+    min-height: 0;
   }
+  .portada__fondo {
+    position: relative;
+    inset: auto;
+    z-index: 0;
+    height: 46vh;
+    min-height: 300px;
+  }
+  .portada__fondo::after {
+    /* la foto se funde hacia abajo con el color de la tarjeta,
+       en vez de oscurecerse de un lado como en desktop */
+    background: linear-gradient(to top, var(--terciopelo) 0%, transparent 40%);
+  }
+  .portada__tarjeta {
+    padding: 0 1.5rem;
+  }
+  .portada__tarjeta-caja {
+    max-width: 100%;
+    background: var(--terciopelo);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    border: none;
+    padding: 2.25rem 0 3rem;
+  }
+  .portada__pie { display: none; }
+
   .catalogo, .nosotros, .pie { padding-left: 1.5rem; padding-right: 1.5rem; }
   .nosotros__bloques { grid-template-columns: repeat(2, 1fr); gap: 2.5rem 1.5rem; }
-  .portada__pieza { order: -1; aspect-ratio: 3 / 2; }
   .ficha__caja { grid-template-columns: 1fr; }
   .ficha__datos { padding: 1.75rem; }
-  .catalogo, .nosotros, .pie { padding-left: 1.5rem; padding-right: 1.5rem; }
 }
 
 @media (max-width: 560px) {
@@ -528,4 +545,5 @@ a { color: inherit; }
   .barra__nav { gap: 1.1rem; font-size: .85rem; }
   .marca { font-size: 1.2rem; letter-spacing: .2em; }
   .grilla { grid-template-columns: repeat(2, 1fr); gap: 2rem 1rem; }
+  .portada__fondo { height: 38vh; min-height: 240px; }
 }

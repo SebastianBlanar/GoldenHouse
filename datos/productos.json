@@ -90,4 +90,137 @@
 "descripcion": "Reloj Patek Plateado con un diseño clásico y elegante.",
 "destacado": false
 }
+,
+{
+"id": "van-cleef-blanca-negra",
+"nombre": "Van Cleef Blanca y Negra",
+"categoria": "pulseras",
+"material": "",
+"precio": 75000,
+"imagen": "img/van-cleef-blanca-negra.jpeg",
+"descripcion": "Pulsera Van Cleef Blanca y Negra con un diseño clásico y elegante.",
+"destacado": false
+},
+{
+"id": "pulsera-articulada",
+"nombre": "Pulsera Articulada",
+"categoria": "pulseras",
+"material": "",
+"precio": 75000,
+"imagen": "img/pulsera-articulada.jpeg",
+"descripcion": "Pulsera articulada con un diseño clásico y elegante.",
+"destacado": false
+},
+{
+"id": "cadena-van-cleef-blanca",
+"nombre": "Cadena Van Cleef blanca",
+"categoria": "cadenas premium",
+"material": "",
+"precio": 75000,
+"imagen": "img/cadena-van-cleef-blanca.jpeg",
+"descripcion": "Cadena Van Cleef con un diseño clásico y elegante.",
+"destacado": false
+}
+,
+{
+"id": "cadena-van-cleef-negra",
+"nombre": "Cadena Van Cleef negra",
+"categoria": "cadenas premium",
+"material": "",
+"precio": 75000,
+"imagen": "img/cadena-van-cleef-negra.jpeg",
+"descripcion": "Cadena Van Cleef con un diseño clásico y elegante.",
+"destacado": false
+},
+{
+"id": "pulsera gourmet",
+"nombre": "Pulsera Gourmet",
+"categoria": "pulseras",
+"material": "",
+"precio": 75000,
+"imagen": "img/pulsera-gourmet.jpeg",
+"descripcion": "Pulsera Gourmet con un diseño clásico y elegante.",
+"destacado": false
+},
+{
+"id": "pulsera tourbillon",
+"nombre": "Pulsera Tourbillon",
+"categoria": "pulseras",
+"material": "",
+"precio": 75000,
+"imagen": "img/pulsera-tourbillon.jpeg",
+"descripcion": "Pulsera Tourbillon con un diseño clásico y elegante.",
+"destacado": false
+},
+{
+"id": "rolex-dorado-plateado",
+"nombre": "Rolex dorado y plateado",
+"categoria": "relojes",
+"material": "",
+"precio": 75000,
+"imagen": "img/rolex-dorado-plateado.jpeg",
+"descripcion": "Reloj Rolex dorado y plateado con un diseño clásico y elegante.",
+"destacado": false
+},
+{
+"id": "rolex-dorado",
+"nombre": "Rolex dorado",
+"categoria": "relojes",
+"material": "",
+"precio": 75000,
+"imagen": "img/rolex-dorado.jpeg",
+"descripcion": "Reloj Rolex dorado con un diseño clásico y elegante.",
+"destacado": false
+},
+{
+"id": "rolex-plateado",
+"nombre": "Rolex plateado",
+"categoria": "relojes",
+"material": "",
+"precio": 75000,
+"imagen": "img/rolex-plateado.jpeg",
+"descripcion": "Reloj Rolex plateado con un diseño clásico y elegante.",
+"destacado": false
+},
+{
+"id": "rolex-dorado-blanco",
+"nombre": "Rolex dorado y blanco",
+"categoria": "relojes",
+"material": "",
+"precio": 75000,
+"imagen": "img/rolex-dorado-blanco.jpeg",
+"descripcion": "Reloj Rolex dorado y blanco con un diseño clásico y elegante.",
+"destacado": false
+},
+{
+"id": "rolex-dorado-negro",
+"nombre": "Rolex dorado y negro",
+"categoria": "relojes",
+"material": "",
+"precio": 75000,
+"imagen": "img/rolex-dorado-negro.jpeg",
+"descripcion": "Reloj Rolex dorado y negro con un diseño clásico y elegante.",
+"destacado": false
+},
+{
+"id": "rolex-plateado-negro",
+"nombre": "Rolex plateado y negro",
+"categoria": "relojes",
+"material": "",
+"precio": 75000,
+"imagen": "img/rolex-plateado-negro.jpeg",
+"descripcion": "Reloj Rolex plateado y negro con un diseño clásico y elegante.",
+"destacado": false
+},
+{
+"id": "rolex-dorado",
+"nombre": "Rolex dorado",
+"categoria": "relojes",
+"material": "",
+"precio": 75000,
+"imagen": "img/rolex-dorado.jpeg",
+"descripcion": "Reloj Rolex dorado con un diseño clásico y elegante.",
+"destacado": false
+}
+
 ]

@@ -65,7 +65,7 @@ function ponerImagen(contenedor, producto) {
 
 // Imagen fija de portada — no depende de productos.json.
 // Cambiala cuando quieras usar otra foto.
-const IMAGEN_PORTADA = "img/portada.jpg";
+const IMAGEN_PORTADA = "img/golden-house-portada.jpeg";
 
 // Texto de la etiqueta flotante sobre la foto. Dejalo vacío ("") si no
 // querés que aparezca nada — no tiene por qué ser el nombre de un producto.
